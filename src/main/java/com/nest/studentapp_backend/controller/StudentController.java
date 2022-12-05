@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
     @GetMapping("/")
-    public  String HomePage()
+    public  String WebPage()
     {
         return "welcome to my website";
 
@@ -23,6 +23,12 @@ public class StudentController {
     public String GalleryPage()
     {
         return "Welcome to my gallery";
+    }
+
+    @GetMapping("/home")
+    public String HomePage()
+    {
+        return "Welcome to my home page";
     }
 
 
